@@ -75,3 +75,13 @@ print(True or False)  # True
 print(not False)  # True
 print(not True)  # False
 
+a = 6
+b = 8
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 6 > 8 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 6 < 8 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 8 = False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 6 <= 8 = True
+print(f"Porównanie {a >= b = }")  # Porównanie a >= b = False
+print(f"Porównanie {a} == {b} = {a == b}")  # == - porównanie, Porównanie 6 == 8 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # != - czy rózne, Porównanie 6 != 8 = True
