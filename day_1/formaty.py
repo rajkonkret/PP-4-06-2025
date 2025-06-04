@@ -10,4 +10,20 @@ print(sys.float_info)
 
 liczba = 890123456123789  # int
 
+print("Witaj %s masz teraz %d lat." % (user, wiek))  # Witaj Tomek masz teraz 30 lat.
+# %d: formatowanie liczb całkowitych
+# %f: formatowanie liczb zmiennoprzecinkowych
+# %s - łańcuch znaków (string)
+# shift ctrl strałka w dół - przesunięcie linii w dół
 
+# TypeError: %d format: a real number is required, not str
+# sprawdza typy
+# print("Witaj %d masz teraz %s lat." % (user, wiek))  # Witaj Tomek masz teraz 30 lat.
+
+print("Witaj %(imie)s. Jak się czujesz %(imie)s?" % {'imie': user})
+# Witaj Tomek. Jak się czujesz Tomek?
+
+print("Witaj {}, masz teraz {} lat.".format(user, wiek))
+# Witaj Tomek, masz teraz 30 lat.
+
+print(f"Witaj {user}, masz teraz {wiek} lat.")  # Witaj Tomek, masz teraz 30 lat.
