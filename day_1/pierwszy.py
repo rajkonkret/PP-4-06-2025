@@ -1,5 +1,7 @@
 # PEP8
 # ctrl alt l - formatowanie kodu wg zasad PEP8
+import sys
+
 print()  # wypisz/wydrukuj pustą linię
 
 print("Nazywam się Radek")  # Nazywam się Radek
@@ -36,4 +38,32 @@ print("168" * 35)  # 5880
 # 168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168
 print(10 * "-")  # ----------
 
+print(sys.int_info)
+# sys.int_info(bits_per_digit=30,
+#              sizeof_digit=4,
+#              default_max_str_digits=4300,
+#              str_digits_check_threshold=640)
 
+# zmienna - pudełko na dane, posiada nazwę
+# nazwa zmiennej powinna podpowiadac co zawiera
+# snake_case - konwencja nazewnicza
+# ctrl / - komentowanie zaznaczonej linii
+
+# typowanie dynamiczne - w każdej chwili dowolny typ danych możemy wrzucić do zmiennej
+name = "Radek"
+print(name)  # Radek, wypisanie wartości zmiennej
+print(type(name))  # <class 'str'>
+
+name = 90
+print(type(name))  # <class 'int'>
+print(name)  # 90
+
+# to są tylko podpowiedzi
+name: str = "Radek"
+print(name)
+print(type(name))
+
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
+# mypy
