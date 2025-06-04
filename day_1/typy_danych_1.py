@@ -20,3 +20,12 @@ print(len(str(wiek ** rok)))  # 3386
 # the
 # limit(4300
 # digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+
+print(54 - 5 * 43 + 4 / 1 + 4 / 2)  # -155.0
+print(54 - 5 * 43 + (4 / 1 + 4) / 2)  # -157.0
+
+# typ float - liczby zmiennoprzecinkowe
+print(0.2 + 0.8)  # 1.0
+print(0.2 + 0.7)  # 0.8999999999999999 błąd zaokrąglenia
+# the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345
+# decimal - pozwala lepiej zarządzac błędem zaokrąglenia
