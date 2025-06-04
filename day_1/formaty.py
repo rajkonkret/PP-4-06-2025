@@ -27,3 +27,21 @@ print("Witaj {}, masz teraz {} lat.".format(user, wiek))
 # Witaj Tomek, masz teraz 30 lat.
 
 print(f"Witaj {user}, masz teraz {wiek} lat.")  # Witaj Tomek, masz teraz 30 lat.
+
+print("Używamy wersji python %i" % 3)  # Używamy wersji python 3
+print("Używamy wersji python %f" % 3)  # Używamy wersji python 3.000000
+print("Używamy wersji python %.2f" % 3)  # Używamy wersji python 3.00
+print("Używamy wersji python %.1f" % 3.9)  # Używamy wersji python 3.9
+print("Używamy wersji python %.0f" % 3.9)  # Używamy wersji python 4 - zaokrąglenie
+print("Używamy wersji python %.f" % 3.9)  # Używamy wersji python 4 - zaokrąglenie
+
+print(f"Uzywamy wersji {wersja}")  # Uzywamy wersji 3.900001
+print(f"Uzywamy wersji {wersja:.2f}")  # Uzywamy wersji 3.90
+print(f"Uzywamy wersji {wersja:.1f}")  # Uzywamy wersji 3.9
+print(f"Uzywamy wersji {wersja:.0f}")  # Uzywamy wersji 4
+
+print(f"{user:>10}")  # "     Tomek"
+print(f"{user:<15}")  # "Tomek          "
+print(f"{user:^20}")  # "       Tomek        "
+
+print(len(user))  # długosc sekwencji, 5 znaków
