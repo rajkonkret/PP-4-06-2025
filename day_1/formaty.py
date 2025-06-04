@@ -45,3 +45,14 @@ print(f"{user:<15}")  # "Tomek          "
 print(f"{user:^20}")  # "       Tomek        "
 
 print(len(user))  # długosc sekwencji, 5 znaków
+
+print(liczba)  # 890123456123789
+print(f"Nasza duża liczba {liczba:,}")  # Nasza duża liczba 890,123,456,123,789
+print(f"Nasza duża liczba {liczba:_}")  # Nasza duża liczba 890_123_456_123_789
+print(f"Nasza duża liczba {liczba:_}".replace("_", " "))  # Nasza duża liczba 890 123 456 123 789
+print(f"Nasza duża liczba {liczba:_}".replace("_", "."))  # Nasza duża liczba 890.123.456.123.789
+
+dane = 500000000000
+dane = 500_000_000_000
+print(type(dane))  # <class 'int'>
+print(dane)  # 500000000000
