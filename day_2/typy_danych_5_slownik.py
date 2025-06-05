@@ -41,4 +41,14 @@ print(dictionary.get('imie', "default"))  # Radek
 dictionary.update({'data': '31-12-2025'})
 print(dictionary)  # {'imie': 'Radek', 'wiek': 67, 'data': '31-12-2025'}
 
+# # input() - pozwala wprowadzić dane do komputera
+tekst = input("Podaj imię")
+print(tekst)
+# # Podaj imięRadek
+# # Radek
+# ctrl / - komentowanie
 
+# napisac aplikację kalkulator
+# pobrac dwie liczby
+# wyswietlic wynik obliczenia(+)
+# ctrl shift f - wyszuzkiwanie w plikach
