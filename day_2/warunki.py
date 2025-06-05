@@ -83,19 +83,41 @@ print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
 # pobrac odpowiedz
 # wypisac czy prawidłowa
 
-punkty = 0
-odp = input("podaj datę Chrztu Polski")  # str
-if odp == "966":
-    print("Dobrze")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Musisz się jescze douczyć")
-
-print("punkty:", punkty)  # punkty: 1
+# punkty = 0
+# odp = input("podaj datę Chrztu Polski")  # str
+# if odp == "966":
+#     print("Dobrze")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Musisz się jescze douczyć")
+#
+# print("punkty:", punkty)  # punkty: 1
 
 # spam += 1    spam = spam + 1
 # spam -= 1    spam = spam - 1
 # spam *= 1    spam = spam * 1
 # spam /= 1    spam = spam / 1
 # spam %= 1    spam = spam % 1
+
+
+alert_system = "email"
+error_level = "error"
+lista_b = []
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System Email")
+    if alert_system == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny bład")
+else:
+    print("Inny system")
+
+print(lista_b)
+# System Email
+# ['inny bład']
