@@ -44,3 +44,11 @@ print("Radek")
 print("Nowa linia")
 # imie<=>Radek||||nazwisko<=>Kowalski||||Radek
 # Nowa linia
+pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+ang_pol = {}
+for k, v in pol_ang.items():
+    ang_pol[v] = k
+print(ang_pol)  # {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'}
+
+print({values: key for key, values in pol_ang.items()})
+# {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'}
