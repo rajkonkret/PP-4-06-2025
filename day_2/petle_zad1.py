@@ -146,3 +146,52 @@ for i, o in enumerate(imiona, start=1):
 # 2 Tomek
 # 3 Zenek
 # 4 Ania
+
+imiona = ["Radek", "Tomek", "Zenek", "Ania"]
+wiek = [45, 65, 32, 43]
+
+# Radek 45
+for p in imiona:
+    print(p, wiek[imiona.index(p)])
+# Radek 45
+# Tomek 65
+# Zenek 32
+# Ania 43
+
+# zip() - łączenie kolekcji
+for i in zip(imiona, wiek):
+    print(i)
+# ('Radek', 45)
+# ('Tomek', 65)
+# ('Zenek', 32)
+# ('Ania', 43)
+
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Radek 45
+# Tomek 65
+# Zenek 32
+# Ania 43
+
+# 0 Radek 45
+
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Radek', 45))
+# (1, ('Tomek', 65))
+# (2, ('Zenek', 32))
+# (3, ('Ania', 43))
+a, b = (0, ('Radek', 45))
+print(a, b)  # 0 ('Radek', 45)
+c, d = ('Radek', 45)
+print(c, d)  # Radek 45
+print(a, c, d)
+a, (c, d) = (3, ('Ania', 43))
+print(a, c, d)  # 3 Ania 43
+
+for i, (o, w) in enumerate(zip(imiona, wiek)):
+    print(i, o, w)
+# 0 Radek 45
+# 1 Tomek 65
+# 2 Zenek 32
+# 3 Ania 43
