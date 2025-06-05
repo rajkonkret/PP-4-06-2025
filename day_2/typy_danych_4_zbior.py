@@ -39,3 +39,32 @@ print(zbior_copy)  # {66, 777, 11, 44, 17, 18, 22, 24}
 print(id(zbior))  # 2680093377696
 print(id(zbior_copy))  # 2680093678880
 
+# dostajemy nowy zbiór
+# operacje na zbiorach
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
+print(type(zbior_2))  # <class 'set'>
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+
+# suma zbiorów
+print(zbior | zbior_2)  # {66, 777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62}
+print(zbior.union(zbior_2))  # {66, 777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62}
+
+# częśc wspólna
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# różnica
+print(zbior - zbior_2)  # {66, 777, 17, 22, 24}
+print(zbior.difference(zbior_2))  # {66, 777, 17, 22, 24}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
+
+# update() - do zbioru dopisuje elementy innego zbioru, zmienia bazowy
+zbior.update(zbior_2)
+print(zbior)  # {66, 777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62}
+
+krotka = tuple(zbior)
+print(krotka)  # (66, 777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62)
+
+print(777 in zbior)  # True
+print(767 in lista)  # False
+print(777 in krotka)  # True
