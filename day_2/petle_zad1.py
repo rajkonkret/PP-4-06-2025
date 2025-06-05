@@ -53,13 +53,30 @@ print(lista3)  # [0, 2, 4, 6, 8]
 
 for c in lista3:  # pobiera po kolei wszystkie lementy z lista3
     if c > 4:
-        print("Większe od 4")
+        print(c, "Większe od 4")
     elif c == 4:
-        print("Równe 4")
+        print(c, "Równe 4")
     else:
-        print("Mniejsze od 4")
-# Mniejsze od 4
-# Mniejsze od 4
-# Równe 4
-# Większe od 4
-# Większe od 4
+        print(c, "Mniejsze od 4")
+# 0 Mniejsze od 4
+# 2 Mniejsze od 4
+# 4 Równe 4
+# 6 Większe od 4
+# 8 Większe od 4
+
+for i in range(0, 10, 2):  # start, stop, krok
+    print(i)
+# 0
+# 2
+# 4
+# 6
+# 8
+
+for i in range(-10, 0):
+    print(i)
+
+for i in range(10, 0, -3):  # ujemny krok, idziemy w tył
+    print(i)
+# 7
+# 4
+# 1
