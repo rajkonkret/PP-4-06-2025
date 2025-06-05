@@ -82,8 +82,20 @@ print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
 # zadac pytanie
 # pobrac odpowiedz
 # wypisac czy prawidłowa
-odp = input("podaj datę Chrztu Polski") # str
+
+punkty = 0
+odp = input("podaj datę Chrztu Polski")  # str
 if odp == "966":
     print("Dobrze")
+    # punkty = punkty + 1
+    punkty += 1
 else:
     print("Musisz się jescze douczyć")
+
+print("punkty:", punkty)  # punkty: 1
+
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
