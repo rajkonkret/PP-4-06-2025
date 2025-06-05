@@ -50,19 +50,30 @@ if (n := len(a)) > 3:
     print(f"Długość wynosi {n}, więcej niż 3")
 # Długość wynosi 5, więcej niż 3
 
-# kolejnosc ma znaczenie
-podatek = 0
-zarobki = int(input("Podaj zrobki"))
-if zarobki < 10_000:  # do 9999
-    podatek = 0
-elif zarobki < 40_000:  # od 10_000 do 39_999
-    podatek = 0.2
-elif zarobki < 100_000:  # od 40_000
-    podatek = 0.4
-elif zarobki < 40_000:  # od 10_000 do 39_999
-    podatek = 0.2
-else:
-    podatek = 0.9
+# # kolejnosc ma znaczenie
+# podatek = 0
+# zarobki = int(input("Podaj zrobki"))
+# if zarobki < 10_000:  # do 9999
+#     podatek = 0
+# elif zarobki < 40_000:  # od 10_000 do 39_999
+#     podatek = 0.2
+# elif zarobki < 100_000:  # od 40_000
+#     podatek = 0.4
+# elif zarobki < 40_000:  # od 10_000 do 39_999
+#     podatek = 0.2
+# else:
+#     podatek = 0.9
+#
+# print(f"Podatek wynosi {podatek * zarobki} pln.")
+# # podatek 0.2 dla przedziału 10_000 do 39_999
 
-print(f"Podatek wynosi {podatek * zarobki} pln.")
-# podatek 0.2 dla przedziału 10_000 do 39_999
+suma_zam = 150
+if suma_zam > 100:
+    rabat = 25
+else:
+    rabat = 0
+
+print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
+
+rabat = 25 if suma_zam > 100 else 0  # operator warunkowy
+print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
