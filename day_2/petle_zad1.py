@@ -80,3 +80,18 @@ for i in range(10, 0, -3):  # ujemny krok, idziemy w tył
 # 7
 # 4
 # 1
+
+for c in lista3:
+    if c == 2:
+        c += 1
+        print(c)  # tylko dla c==2
+    print("Za każdym przejściem pętli")
+
+print("Po zakońćzeniu pętli")
+# Za każdym przejściem pętli
+# 3
+# Za każdym przejściem pętli
+# Za każdym przejściem pętli
+# Za każdym przejściem pętli
+# Za każdym przejściem pętli
+# Po zakońćzeniu pętli
