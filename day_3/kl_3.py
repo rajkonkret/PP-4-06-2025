@@ -79,7 +79,7 @@ or2.wydaj_odglos()  # Kir kier kirr
 
 # polimorfizm
 # obiekty róznych klas  , dziedziczą po wspólnej klasie
-# mją wspolne cechy, metody
+# mają wspolne cechy, metody
 lista = [kur2, or2]
 for c in lista:
     c.wydaj_odglos()
