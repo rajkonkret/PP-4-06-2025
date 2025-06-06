@@ -121,3 +121,6 @@ https://www.w3schools.com/python/default.asp
 https://www.hackerrank.com/domains/python
 https://pl.altapps.net/soft/hackerrank-com
 https://github.com/rajkonkret/PP-4-06-2025
+
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
