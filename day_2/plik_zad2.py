@@ -14,6 +14,7 @@ print(data)
 # ['Powitanie\n', 'kolejne\n', 'Jescze jedno\n', 'Radek\n', 'Kowalski']
 for line in data:
     line_data = line.split()
+    # line_data = line.split(".")
     for l in line_data:
         print(l)
 # ['Powitanie\n', 'kolejne\n', 'Jescze jedno\n', 'Radek\n', 'Kowalski']
