@@ -124,3 +124,7 @@ https://github.com/rajkonkret/PP-4-06-2025
 
 pip freeze > requirements.txt
 pip install -r .\requirements.txt
+
+exe
+pip install pyinstaller
+pyinstaller.exe --noconsole --onefile .\okno1.py
